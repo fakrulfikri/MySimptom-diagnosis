@@ -1,16 +1,12 @@
 # symptom-checker
 First time GitHub-ing. Please work..
 
-## How to run
-### windows
-- Download the repo install 
-- run command "pip install -r requirements.txt"
-- run _"app.py"_
-### Linux
-- Clone the Repo using "git clone https://github.com/dev-Roshan-lab/symptom-predictor.git"
-- run command "pip install -r requirements.txt"
-- run _"app.py"_
+## Update
+IT WORKED!!!
 
-### Don't know what to do with this check out the [Android app](https://github.com/dev-Roshan-lab/symptom-predictor-api/tree/master/Android%20app%20source) supporting this through an request method to get the disease 
+### How it works
+- Use PaaS (Platform as a Service) website/platform to connect to the repositories.
+- Make sure to set the Dyno type to web.
+- Link the connected service as an API to other applications such as android apk.
 
-### made with python 3.8
+Will update more in the future
