@@ -20,36 +20,32 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['back pain','constipation','abdominal pain','diarrhoea','mild fever','yellow urine',
-        'yellowing of eyes','acute liver failure','fluid overload','swelling of stomach',
-        'swelled lymph nodes','malaise','blurred and distorted vision','phlegm','throat irritation',
-        'redness of eyes','sinus pressure','runny nose','congestion','chest pain','weakness in limbs',
-        'fast heart rate','pain during bowel movements','pain in anal region','bloody stool',
-        'irritation in anus','neck pain','dizziness','cramps','bruising','obesity','swollen legs',
-        'swollen blood vessels','puffy face and eyes','enlarged thyroid','brittle nails',
-        'swollen extremeties','excessive hunger','extra marital contacts','drying and tingling lips',
-        'slurred speech','knee pain','hip joint pain','muscle weakness','stiff neck','swelling joints',
-        'movement stiffness','spinning movements','loss of balance','unsteadiness',
-        'weakness of one body side','loss of smell','bladder discomfort','foul smell of urine',
-        'continuous feel of urine','passage of gases','internal itching','toxic look (typhos)',
-        'depression','irritability','muscle pain','altered sensorium','red spots over body','belly pain',
-        'abnormal menstruation','dischromic  patches','watering from eyes','increased appetite','polyuria','family history','mucoid sputum',
-        'rusty sputum','lack of concentration','visual disturbances','receiving blood transfusion',
-        'receiving unsterile injections','coma','stomach bleeding','distention of abdomen',
-        'history of alcohol consumption','fluid overload','blood in sputum','prominent veins on calf',
-        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling',
-        'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
-        'yellow crust ooze']
+    l1=['gatal badan', 'ruam', 'bersin berterusan', 'menggigil', 'sejuk', 'sakit sendi', 'sakit perut', 
+        'keasidan dalam perut', 'ulser di lidah', 'lemah otot', 'muntah', 'pembuangan air kecil berasa panas', 
+        'sakit semasa membuang air kecil', 'keletihan', 'kenaikan berat badan', 'kegelisahan', 
+        'tapak tangan dan kaki berasa sejuk', 'perubahan emosi', 'penurunan berat badan', 'keresahan', 
+        'kelesuan', 'paras gula tidak normal', 'batuk', 'demam panas', 'mata cekung', 'sesak nafas', 'berpeluh', 
+        'kenyahidratan', 'ketidakhadaman', 'sakit kepala', 'kulit berwarna kuning', 'air kencing gelap', 'loya', 
+        'hilang selera makan', 'kesakitan di belakang mata', 'sakit belakang', 'sembelit', 'sakit perut', 
+        'cirit-birit', 'demam ringan', 'air kencing kuning', 'kegagalan hati akut', 'bengkak perut', 'nod limfo bengkak',
+        'penglihatan kabur ', 'kahak', 'kerengsaan tekak', 'kemerahan mata', 'hingus', 'kesesakan nafas', 'sakit dada', 
+        'anggota bada berasa lemah', 'kadar degupan jantung yang laju', 'najis berdarah', 'kerengsaan anus', 'sakit leher', 
+        'pening kepala', 'kekejangan', 'lebam', 'obesiti', 'pembesaran tiriod', 'kelaparan berlebihan', 'bibir kering', 
+        'sakit lutut', 'sendi bengkak', 'hilang keseimbangan', 'kelemahan satu sisi badan', 'hilang deria bau', 
+        'ketidakselesaan pundi kencing', 'air kencing busuk', 'gatal dalaman', 'kemurungan', 'kerengsaan', 'kesakitan otot', 
+        'tompok merah atas badan', 'haid tidak normal', 'peningkatan selera makan', 'kurang tumpuan', 'gangguan visual', 
+        'pendarahan perut', 'sakit semasa berjalan ', 'jerawat dipenuhi nanah', 'bintik hitam', 'kulit mengupas', 
+        'ruam merah sekeliling hidung']
 
-    disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
-        'Peptic ulcer diseae','AIDS','Diabetes','Gastroenteritis','Bronchial Asthma','Hypertension',
-        ' Migraine','Cervical spondylosis',
-        'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Dengue','Typhoid','hepatitis A',
-        'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
-        'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
-        'Heartattack','Varicoseveins','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
-        'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
-        'Impetigo']
+    disease=['prognosis', 'Jangkitan kulat', 'Alergi','GERD',
+             'Kolestasis kronik', 'Tindak balas dadah', 'Penyakit ulser peptik', 'AIDS',
+             'Diabetes', 'Radang perut dan usus', 'Asma bronkial', 'Tekanan darah tinggi', 'Migrain', 
+             'Spondylosis serviks', 'Lumpuh (pendarahan otak) ','Jaundis', 
+             'Malaria', 'Cacar air', 'Denggi', 'Typhoid', 'hepatitis A', 'hepatitis B', 'hepatitis C',
+             'hepatitis D', 'hepatitis E', 'Hepatitis beralkohol', 'Tuberkulosis', 'Demam selesema biasa',
+             'Radang paru-paru', 'Buasir dimorphic', 'Serangan jantung ',
+             'Urat varikos', 'Hipotiroidisme', 'Hipertiroidisme', 'Hipoglycemia', 'Osteoarthristis', 'Artritis',
+             '(vertigo) Posisi Paroymsal Vertigo', 'Jerawat', 'Jangkitan saluran kencing', 'Psoriasis', 'Impetigo']
 
     l2=[]
     for x in range(0,len(l1)):
@@ -58,15 +54,15 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 # TESTING DATA df -------------------------------------------------------------------------------------
     df=pd.read_csv("Training.csv")
 
-    df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
-        'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
-        'Migraine':11,'Cervical spondylosis':12,
-        'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Dengue':17,'Typhoid':18,'hepatitis A':19,
-        'Hepatitis B':20,'Hepatitis C':21,'Hepatitis D':22,'Hepatitis E':23,'Alcoholic hepatitis':24,'Tuberculosis':25,
-        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Varicose veins':30,'Hypothyroidism':31,
-        'Hyperthyroidism':32,'Hypoglycemia':33,'Osteoarthristis':34,'Arthritis':35,
-        '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
-        'Impetigo':40}},inplace=True)
+    df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
+                             'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
+                             'Migrain':11,'Spondylosis serviks':12,
+                             'Lumpuh (pendarahan otak) ':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
+                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol ':24,'Tuberkulosis':25,
+                             'Demam selesema biasa':26,'Radang paru-paru ':27,'Buasir dimorphic':28,'Serangan jantung ':29,'Urat varikos':30,'Hipotiroidisme':31,
+                             'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35, 
+                             '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
+                             'Impetigo':40}},inplace=True)
 
 # print(df.head())
 
@@ -78,15 +74,15 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # TRAINING DATA tr --------------------------------------------------------------------------------
     tr=pd.read_csv("Testing.csv")
-    tr.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
-        'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
-        'Migraine':11,'Cervical spondylosis':12,
-        'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Dengue':17,'Typhoid':18,'hepatitis A':19,
-        'Hepatitis B':20,'Hepatitis C':21,'Hepatitis D':22,'Hepatitis E':23,'Alcoholic hepatitis':24,'Tuberculosis':25,
-        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Varicose veins':30,'Hypothyroidism':31,
-        'Hyperthyroidism':32,'Hypoglycemia':33,'Osteoarthristis':34,'Arthritis':35,
-        '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
-        'Impetigo':40}},inplace=True)
+    tr.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4, 
+                             'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
+                             'Migrain':11,'Spondylosis serviks':12,
+                             'Lumpuh (pendarahan otak) ':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
+                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol ':24,'Tuberkulosis':25,
+                             'Demam selesema biasa':26,'Radang paru-paru ':27,'Buasir dimorphic':28,'Serangan jantung ':29,'Urat varikos':30,'Hipotiroidisme':31,
+                             'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35, 
+                             '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
+                             'Impetigo':40}},inplace=True)
 
     X_test= tr[l1]
     y_test = tr[["prognosis"]]
