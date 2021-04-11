@@ -40,10 +40,10 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     disease=['prognosis', 'Jangkitan kulat', 'Alergi','GERD',
              'Kolestasis kronik', 'Tindak balas dadah', 'Penyakit ulser peptik', 'AIDS',
              'Diabetes', 'Radang perut dan usus', 'Asma bronkial', 'Tekanan darah tinggi', 'Migrain', 
-             'Spondylosis serviks', 'Lumpuh (pendarahan otak) ','Jaundis', 
+             'Spondylosis serviks', 'Lumpuh (pendarahan otak)','Jaundis', 
              'Malaria', 'Cacar air', 'Denggi', 'Typhoid', 'hepatitis A', 'hepatitis B', 'hepatitis C',
              'hepatitis D', 'hepatitis E', 'Hepatitis beralkohol', 'Tuberkulosis', 'Demam selesema biasa',
-             'Radang paru-paru', 'Buasir dimorphic', 'Serangan jantung ',
+             'Radang paru-paru', 'Buasir dimorphic', 'Serangan jantung',
              'Urat varikos', 'Hipotiroidisme', 'Hipertiroidisme', 'Hipoglycemia', 'Osteoarthristis', 'Artritis',
              '(vertigo) Posisi Paroymsal Vertigo', 'Jerawat', 'Jangkitan saluran kencing', 'Psoriasis', 'Impetigo']
 
@@ -57,9 +57,9 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
                              'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
                              'Migrain':11,'Spondylosis serviks':12,
-                             'Lumpuh (pendarahan otak) ':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
-                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol ':24,'Tuberkulosis':25,
-                             'Demam selesema biasa':26,'Radang paru-paru ':27,'Buasir dimorphic':28,'Serangan jantung ':29,'Urat varikos':30,'Hipotiroidisme':31,
+                             'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
+                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,
+                             'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,
                              'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35, 
                              '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
                              'Impetigo':40}},inplace=True)
@@ -77,9 +77,9 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     tr.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4, 
                              'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
                              'Migrain':11,'Spondylosis serviks':12,
-                             'Lumpuh (pendarahan otak) ':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
-                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol ':24,'Tuberkulosis':25,
-                             'Demam selesema biasa':26,'Radang paru-paru ':27,'Buasir dimorphic':28,'Serangan jantung ':29,'Urat varikos':30,'Hipotiroidisme':31,
+                             'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
+                             'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,
+                             'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,
                              'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35, 
                              '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
                              'Impetigo':40}},inplace=True)
