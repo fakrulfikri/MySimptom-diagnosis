@@ -33,7 +33,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'anggota bada berasa lemah','kadar degupan jantung yang laju','najis berdarah','kerengsaan anus',
         'sakit leher','pening kepala','kekejangan','lebam',
         'obesiti','pembesaran tiriod','kelaparan berlebihan','bibir kering','sakit lutut','sendi bengkak',
-        'hilang keseimbangan','dkelemahan satu sisi badan','hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','gatal dalaman','kemurungan',
+        'hilang keseimbangan','kelemahan satu sisi badan','hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','gatal dalaman','kemurungan',
         'kerengsaan','kesakitan otot','tompok merah atas badan','haid tidak normal',
         'peningkatan selera makan','kurang tumpuan','gangguan visual','pendarahan perut',
         'sakit semasa berjalan ','jerawat dipenuhi nanah','bintik hitam','kulit mengupas',
