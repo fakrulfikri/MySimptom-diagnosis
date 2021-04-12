@@ -37,19 +37,11 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'rusty sputum','lack of concentration','visual disturbances','receiving blood transfusion',
         'receiving unsterile injections','coma','stomach bleeding','distention of abdomen',
         'history of alcohol consumption','fluid overload','blood in sputum','prominent veins on calf',
-        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling',
+        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling'
         'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
         'yellow crust ooze']
 
-    disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
-        'Peptic ulcer diseae','AIDS','Diabetes','Gastroenteritis','Bronchial Asthma','Hypertension',
-        ' Migraine','Cervical spondylosis',
-        'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Dengue','Typhoid','hepatitis A',
-        'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
-        'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
-        'Heartattack','Varicoseveins','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
-        'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
-        'Impetigo']
+    disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah','Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',' Migrain','Spondylosis serviks','Lumpuh (pendarahan otak)','Jaundis','Malaria','Cacar air','Denggi','Typhoid','hepatitis A','hepatitis B','hepatitis C','hepatitis D','hepatitis E','Hepatitis beralkohol','Tuberkulosis','Demam selesema biasa','Radang paru-paru','Buasir dimorphic','Serangan jantung','Urat varikos','Hipotiroidisme','Hipertiroidisme','Hipoglycemia','Osteoarthristis','Artritis','(vertigo) Posisi Paroymsal Vertigo','Jerawat','Jangkitan saluran kencing','Psoriasis','Impetigo']
 
     l2=[]
     for x in range(0,len(l1)):
@@ -58,15 +50,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 # TESTING DATA df -------------------------------------------------------------------------------------
     df=pd.read_csv("Training.csv")
 
-    df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
-        'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
-        'Migrain':11,'Spondylosis serviks':12,
-        'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
-        'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,
-        'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,
-        'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35,
-        '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
-        'Impetigo':40}},inplace=True)
+    df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,'Migrain':11,'Spondylosis serviks':12,'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35,'(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,'Impetigo':40}},inplace=True)
 
 # print(df.head())
 
@@ -78,15 +62,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # TRAINING DATA tr --------------------------------------------------------------------------------
     tr=pd.read_csv("Testing.csv")
-    df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
-        'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
-        'Migrain':11,'Spondylosis serviks':12,
-        'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
-        'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,
-        'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,
-        'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35,
-        '(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,
-        'Impetigo':40}},inplace=True)
+    tr.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,'Migrain':11,'Spondylosis serviks':12,'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,'Demam selesema biasa':26,'Radang paru-paru':27,'Buasir dimorphic':28,'Serangan jantung':29,'Urat varikos':30,'Hipotiroidisme':31,'Hipertiroidisme':32,'Hipoglycemia':33,'Osteoarthristis':34,'Artritis':35,'(vertigo) Posisi Paroymsal Vertigo':36,'Jerawat':37,'Jangkitan saluran kencing':38,'Psoriasis':39,'Impetigo':40}},inplace=True)
 
     X_test= tr[l1]
     y_test = tr[["prognosis"]]
