@@ -56,7 +56,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         l2.append(0)
 
 # TESTING DATA df -------------------------------------------------------------------------------------
-    df=pd.read_csv(os.path.abspath(os.path.dirname(__file__).replace("",""))+"/asset/Training.csv")
+    df=pd.read_csv("Training.csv")
 
     df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
         'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
@@ -77,7 +77,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 # print(y)
 
 # TRAINING DATA tr --------------------------------------------------------------------------------
-    tr=pd.read_csv(os.path.abspath(os.path.dirname(__file__).replace("",""))+"/asset/Testing.csv")
+    tr=pd.read_csv("Testing.csv")
     tr.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
         'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
         'Migraine':11,'Cervical spondylosis':12,
