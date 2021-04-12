@@ -37,7 +37,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'rusty sputum','lack of concentration','visual disturbances','receiving blood transfusion',
         'receiving unsterile injections','coma','stomach bleeding','distention of abdomen',
         'history of alcohol consumption','fluid overload','blood in sputum','prominent veins on calf',
-        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling'
+        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling',
         'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
         'yellow crust ooze']
 
