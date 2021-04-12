@@ -20,7 +20,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['back pain','constipation','abdominal pain','diarrhoea','mild fever','yellow urine',
+    l1=['sakit belakang','constipation','abdominal pain','diarrhoea','mild fever','yellow urine',
         'acute liver failure','swelling of stomach','swelled lymph nodes','blurred and distorted vision',
         'phlegm','throat irritation','redness of eyes','runny nose','congestion',
         'chest pain','weakness in limbs','fast heart rate','bloody stool','irritation in anus','neck pain',
