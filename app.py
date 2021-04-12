@@ -41,7 +41,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
         'yellow crust ooze']
 
-disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
+    disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
         'Peptic ulcer diseae','AIDS','Diabetes','Gastroenteritis','Bronchial Asthma','Hypertension',
         ' Migraine','Cervical spondylosis',
         'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Dengue','Typhoid','hepatitis A',
@@ -58,7 +58,7 @@ disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reactio
 # TESTING DATA df -------------------------------------------------------------------------------------
     df=pd.read_csv("Training.csv")
 
-   df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
+    df.replace({'prognosis':{'Fungal infection':0,'Allergy':1,'GERD':2,'Chronic cholestasis':3,'Drug Reaction':4,
         'Peptic ulcer diseae':5,'AIDS':6,'Diabetes ':7,'Gastroenteritis':8,'Bronchial Asthma':9,'Hypertension ':10,
         'Migraine':11,'Cervical spondylosis':12,
         'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Dengue':17,'Typhoid':18,'hepatitis A':19,
@@ -87,7 +87,7 @@ disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reactio
         'Hyperthyroidism':32,'Hypoglycemia':33,'Osteoarthristis':34,'Arthritis':35,
         '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
         'Impetigo':40}},inplace=True)
-    
+
     X_test= tr[l1]
     y_test = tr[["prognosis"]]
     np.ravel(y_test)
