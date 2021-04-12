@@ -37,7 +37,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Denggi','Typhoid','hepatitis A',
         'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
         'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
-        'Heartattack','Varicoseveins','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
+        'Heartattack','Vena Varikos','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
         'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
         'Impetigo']
 
@@ -53,7 +53,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'Migraine':11,'Cervical spondylosis':12,
         'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
         'Hepatitis B':20,'Hepatitis C':21,'Hepatitis D':22,'Hepatitis E':23,'Alcoholic hepatitis':24,'Tuberculosis':25,
-        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Varicose veins':30,'Hypothyroidism':31,
+        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Vena Varikos':30,'Hypothyroidism':31,
         'Hyperthyroidism':32,'Hypoglycemia':33,'Osteoarthristis':34,'Arthritis':35,
         '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
         'Impetigo':40}},inplace=True)
@@ -73,7 +73,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'Migraine':11,'Cervical spondylosis':12,
         'Paralysis (brain hemorrhage)':13,'Jaundice':14,'Malaria':15,'Chicken pox':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
         'Hepatitis B':20,'Hepatitis C':21,'Hepatitis D':22,'Hepatitis E':23,'Alcoholic hepatitis':24,'Tuberculosis':25,
-        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Varicose veins':30,'Hypothyroidism':31,
+        'Common Cold':26,'Pneumonia':27,'Dimorphic hemmorhoids(piles)':28,'Heart attack':29,'Vena Varikos':30,'Hypothyroidism':31,
         'Hyperthyroidism':32,'Hypoglycemia':33,'Osteoarthristis':34,'Arthritis':35,
         '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
         'Impetigo':40}},inplace=True)
