@@ -20,24 +20,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['gatal badan', 'ruam', 'bersin berterusan','menggigil','sejuk','sakit sendi','sakit perut',
-        'keasidan dalam perut','ulser di lidah','lemah otot','muntah',
-        'pembuangan air kecil berasa panas','sakit semasa membuang air kecil','keletihan','kenaikan berat badan','kegelisahan',
-        'tapak tangan dan kaki berasa sejuk','perubahan emosi','penurunan berat badan','keresahan','kelesuan','paras gula tidak normal',
-        'batuk','demam panas','mata cekung','sesak nafas',
-        'berpeluh','kenyahidratan','ketidakhadaman','sakit kepala','kulit berwarna kuning','air kencing gelap','loya',
-        'hilang selera makan','kesakitan di belakang mata','sakit belakang','sembelit',
-        'sakit perut','cirit-birit','demam ringan','air kencing kuning',
-        'kegagalan hati akut','bengkak perut','nod limfo bengkak','penglihatan kabur ','kahak','kerengsaan tekak',
-        'kemerahan mata','hingus','kesesakan nafas','sakit dada',
-        'anggota bada berasa lemah','kadar degupan jantung yang laju','najis berdarah','kerengsaan anus',
-        'sakit leher','pening kepala','kekejangan','lebam',
-        'obesiti','pembesaran tiriod','kelaparan berlebihan','bibir kering','sakit lutut','sendi bengkak',
-        'hilang keseimbangan','kelemahan satu sisi badan','hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','gatal dalaman','kemurungan',
-        'kerengsaan','kesakitan otot','tompok merah atas badan','haid tidak normal',
-        'peningkatan selera makan','kurang tumpuan','gangguan visual','pendarahan perut',
-        'sakit semasa berjalan ','jerawat dipenuhi nanah','bintik hitam','kulit mengupas',
-        'ruam merah sekeliling hidung']
+    l1=['gatal badan', 'ruam', 'bersin berterusan','menggigil','sejuk','sakit sendi','sakit perut']
 
     disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
         'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
