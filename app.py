@@ -31,14 +31,14 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'abnormal menstruation','increased appetite','lack of concentration','visual disturbances','stomach bleeding','painful walking',
         'pus filled pimples','blackheads','skin peeling','red sore around nose']
 
-    disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
-        'Peptic ulcer diseae','AIDS','Diabetes','Gastroenteritis','Bronchial Asthma','Hypertension',
-        ' Migraine','Cervical spondylosis',
-        'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Denggi','Typhoid','hepatitis A',
-        'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
-        'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
-        'Heartattack','Vena varikos','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
-        'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
+    disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
+        'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
+        'Migrain','Spondylosis serviks',
+        'Lumpuh (pendarahan otak)','Jaundis','Malaria','Cacar air','Denggi','Typhoid','hepatitis A',
+        'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Hepatitis beralkohol','Tuberkulosis',
+        'Demam selesema','Radang paru-paru','Buasir dimorphic',
+        'Serangan jantung','Vena varikos','Hipotiroidisme','Hipertiroidisme','hipoglycemia','Osteoarthristis',
+        'Artritis','(vertigo) Posisi Parosymsal Vertigo','Jerawat','Jangkitan saluran kencing','Psoriasis',
         'Impetigo']
 
     l2=[]
