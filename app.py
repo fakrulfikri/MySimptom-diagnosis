@@ -20,16 +20,35 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['gatal badan', 'ruam', 'bersin berterusan','menggigil','sejuk','sakit sendi','sakit perut']
+    l1=['back pain','constipation','abdominal pain','diarrhoea','mild fever','yellow urine',
+        'yellowing of eyes','acute liver failure','fluid overload','swelling of stomach',
+        'swelled lymph nodes','malaise','blurred and distorted vision','phlegm','throat irritation',
+        'redness of eyes','sinus pressure','runny nose','congestion','chest pain','weakness in limbs',
+        'fast heart rate','pain during bowel movements','pain in anal region','bloody stool',
+        'irritation in anus','neck pain','dizziness','cramps','bruising','obesity','swollen legs',
+        'swollen blood vessels','puffy face and eyes','enlarged thyroid','brittle nails',
+        'swollen extremeties','excessive hunger','extra marital contacts','drying and tingling lips',
+        'slurred speech','knee pain','hip joint pain','muscle weakness','stiff neck','swelling joints',
+        'movement stiffness','spinning movements','loss of balance','unsteadiness',
+        'weakness of one body side','loss of smell','bladder discomfort','foul smell of urine',
+        'continuous feel of urine','passage of gases','internal itching','toxic look (typhos)',
+        'depression','irritability','muscle pain','altered sensorium','red spots over body','belly pain',
+        'abnormal menstruation','dischromic  patches','watering from eyes','increased appetite','polyuria','family history','mucoid sputum',
+        'rusty sputum','lack of concentration','visual disturbances','receiving blood transfusion',
+        'receiving unsterile injections','coma','stomach bleeding','distention of abdomen',
+        'history of alcohol consumption','fluid overload','blood in sputum','prominent veins on calf',
+        'palpitations','painful walking','pus filled pimples','blackheads','scurring','skin peeling',
+        'silver like dusting','small dents in nails','inflammatory nails','blister','red sore around nose',
+        'yellow crust ooze']
 
-    disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
-        'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
-        ' Migrain','Spondylosis serviks',
-        'Lumpuh (pendarahan otak)','Jaundis','Malaria','Cacar air','Denggi','Typhoid','hepatitis A',
-        'hepatitis B','hepatitis C','hepatitis D','hepatitis E','Hepatitis beralkohol','Tuberkulosis',
-        'Demam selesema biasa','Radang paru-paru','Buasir dimorphic',
-        'Serangan jantung','Urat varikos','Hipotiroidisme','Hipertiroidisme','Hipoglycemia','Osteoarthristis',
-        'Artritis','(vertigo) Posisi Paroymsal Vertigo','Jerawat','Jangkitan saluran kencing','Psoriasis',
+    disease=['Fungal infection','Allergy','GERD','Chronic cholestasis','Drug Reaction',
+        'Peptic ulcer diseae','AIDS','Diabetes','Gastroenteritis','Bronchial Asthma','Hypertension',
+        ' Migraine','Cervical spondylosis',
+        'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Dengue','Typhoid','hepatitis A',
+        'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
+        'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
+        'Heartattack','Varicoseveins','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
+        'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
         'Impetigo']
 
     l2=[]
@@ -59,8 +78,8 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # TRAINING DATA tr --------------------------------------------------------------------------------
     tr=pd.read_csv("Testing.csv")
-    tr.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
-        'Penyakit ulser peptik':5,'AIDS':6,'Diabetes ':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
+    df.replace({'prognosis':{'Jangkitan kulat':0,'Alergi':1,'GERD':2,'Kolestasis kronik':3,'Tindak balas dadah':4,
+        'Penyakit ulser peptik':5,'AIDS':6,'Diabetes':7,'Radang perut dan usus':8,'Asma bronkial':9,'Tekanan darah tinggi':10,
         'Migrain':11,'Spondylosis serviks':12,
         'Lumpuh (pendarahan otak)':13,'Jaundis':14,'Malaria':15,'Cacar air':16,'Denggi':17,'Typhoid':18,'hepatitis A':19,
         'hepatitis B':20,'hepatitis C':21,'hepatitis D':22,'hepatitis E':23,'Hepatitis beralkohol':24,'Tuberkulosis':25,
