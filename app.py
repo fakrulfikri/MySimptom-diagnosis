@@ -37,7 +37,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'Paralysis (brain hemorrhage)','Jaundice','Malaria','Chicken pox','Denggi','Typhoid','hepatitis A',
         'Hepatitis B','Hepatitis C','Hepatitis D','Hepatitis E','Alcoholic hepatitis','Tuberculosis',
         'Common Cold','Pneumonia','Dimorphic hemmorhoids(piles)',
-        'Heartattack','Varicose veins','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
+        'Heartattack','Vena varikos','Hypothyroidism','Hyperthyroidism','Hypoglycemia','Osteoarthristis',
         'Arthritis','(vertigo) Paroymsal  Positional Vertigo','Acne','Urinary tract infection','Psoriasis',
         'Impetigo']
 
