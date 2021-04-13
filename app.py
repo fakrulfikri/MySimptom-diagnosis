@@ -20,16 +20,16 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['back pain','sembelit','sakit perut','diarrhoea','mild fever','yellow urine',
-        'acute liver failure','swelling of stomach','swelled lymph nodes','blurred and distorted vision',
-        'phlegm','throat irritation','redness of eyes','runny nose','congestion',
-        'chest pain','weakness in limbs','fast heart rate','bloody stool','irritation in anus','neck pain',
-        'dizziness','cramps','bruising','obesity',
-        'enlarged thyroid','excessive hunger','drying and tingling lips','knee pain','swelling joints','loss of balance','weakness of one body side',
-        'loss of smell','bladder discomfort','foul smell of urine','internal itching',
-        'depression','irritability','muscle pain','red spots over body',
-        'abnormal menstruation','increased appetite','lack of concentration','visual disturbances','stomach bleeding','painful walking',
-        'pus filled pimples','blackheads','skin peeling','red sore around nose']
+    l1=['back pain','sembelit','sakit perut','cirit-birit','demam ringan','air kencing kuning',
+        'kegagalan hati akut','sbengkak perut','nod limfo bengkak','penglihatan kabur',
+        'kahak','kerengsaan tekak','kemerahan mata','hingus','kesesakan nafas',
+        'sakit dada','anggota badan berasa lemah','kadar degupan jantung yang laju','najis berdarah','kerengsaan anus','sakit leher',
+        'pening kepala','kekejangan','lebam','obesiti',
+        'pembesaran tiriod','kelaparan berlebihan','bibir kering','sakit lutut','sendi bengkak','hilang keseimbangan','kelemahan satu sisi badan',
+        'hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','gatal dalaman',
+        'kemurungan','kerengsaan','kesakitan otot','tompok merah atas badan',
+        'haid tidak normal','peningkatan selera makan','kurang tumpuan','gangguan visual','pendarahan perut','sakit semasa berjalan',
+        'jerawat dipenuhi nanah','bintik hitam','kulit mengupas','ruam merah sekeliling hidung']
 
     disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
         'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
