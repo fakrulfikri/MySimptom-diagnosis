@@ -20,7 +20,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['back pain','sembelit','sakit perut','cirit-birit','demam ringan','air kencing kuning',
+    l1=['sakit belakang','sembelit','sakit perut','cirit-birit','demam ringan','air kencing kuning',
         'kegagalan hati akut','bengkak perut','nod limfa bengkak','penglihatan kabur',
         'kahak','kerengsaan tekak','kemerahan mata','hingus','kesesakan nafas',
         'sakit dada','anggota badan berasa lemah','kadar degupan jantung yang laju','najis berdarah','kerengsaan anus','sakit leher',
