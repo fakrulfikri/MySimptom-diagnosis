@@ -20,16 +20,24 @@ def predict(sym1, sym2, sym3, sym4, sym5):
 
 # from gui_stuff import *
 
-    l1=['sakit belakang','sembelit','sakit perut','cirit-birit','demam ringan','air kencing kuning',
-        'kegagalan hati akut','bengkak perut','nod limfa bengkak','penglihatan kabur',
-        'kahak','kerengsaan tekak','kemerahan mata','hingus','kesesakan nafas',
-        'sakit dada','anggota badan berasa lemah','kadar degupan jantung yang laju','najis berdarah','kerengsaan anus','sakit leher',
-        'pening kepala','kekejangan','lebam','obesiti',
-        'pembesaran tiriod','kelaparan berlebihan','bibir kering','sakit lutut','sendi bengkak','hilang keseimbangan','lemah satu sisi badan',
-        'hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','gatal dalaman',
-        'kemurungan','kerengsaan','kesakitan otot','tompok merah atas badan',
-        'haid tidak normal','peningkatan selera makan','kurang tumpuan','gangguan visual','pendarahan perut','sakit semasa berjalan',
-        'jerawat dipenuhi nanah','bintik hitam','kulit mengupas','ruam merah sekeliling hidung']
+    l1=['gatal','ruam','letusan kulit nod','bersin berterusan','menggigil','berasa sejuk','sakit sendi','stomach_pain','keasidan','ulser di lidah',
+        'otot berasa lemah','muntah','sakit semasa kencing','darah dalam kencing','keletihan','penambahan berat badan','kegelisahan','kaki dan tangan berasa sejuk',
+        'perubahan mood','hilang berat badan','restlessness','kelesuan','tompok dalam tekak','paras gula tidak normal',
+        'batuk','demam panas','mata tenggelam','kesesakan nafas','berpeluh','penyahhidratan','ketidakhadaman','sakit kepala',
+        'kulit kuning','air kencing gelap','loya','hilang selera','sakit belakang mata','sakit belakang','sembelit','sakit perut','cirit-birit','demam ringan','air kencing kuning',
+        'mata kuning','kegagalan hati akut','lebihan cecair','bengkak perut','nod limfa bengkak','rasa tidak sedap hati','penglihatan kabur',
+        'kahak','kerengsaan tekak','kemerahan mata','tekanan sinus','hingus','kesesakan hidung',
+        'sakit dada','anggota badan berasa lemah','kadar degupan jantung yang laju','sakit semasa pergerakan usus','sakit di kawasan dubur','najis berdarah','kerengsaan anus','sakit leher',
+        'pening kepala','kekejangan','lebam','obesiti','bengkak kaki','saluran darah bengkak','muka dan mata bengkak',
+        'pembesaran tiriod','kuku rapuh','kaki bengkak','kelaparan berlebihan','extra_marital_contacts','bibir kering','percakapan tidak jelas','sakit lutut','sakit sendi pinggul','lemah otot','leher tegang','sendi bengkak','pergerakan kaku',
+        'pergerakan berpusing','hilang keseimbangan','tidak stabil','lemah satu sisi badan',
+        'hilang deria bau','ketidakselesaan pundi kencing','air kencing busuk','rasa kencing yang berterusan','rasa bergas','gatal dalaman',
+        'rupa toksik (tifus)','kemurungan','kerengsaan','kesakitan otot','perubahan sensorium','tompok merah atas badan','belly_pain',
+        'haid tidak normal','tompokan dischromic','mata berair','peningkatan selera makan','poliuria','sejarah keluarga','dahak mukoid',
+        'dahak berkarat','kurang tumpuan','gangguan visual','penerimaan darah','menerima suntikan tidak steril','koma','pendarahan perut','perut berasa terbahagi',
+        'sejarah pengambilan alkohol','lebihan cecair','darah dalam dahak','urat menonjol di betis','rasa berdebar-debar','sakit semasa berjalan',
+        'jerawat dipenuhi nanah','bintik hitam','rasa bergegar','kulit mengupas','pengupasan kulit bewarna perak','penyok kecil di kuku','radang kuku',
+        'lepuh','ruam merah sekeliling hidung','kerak kuning mengalir']
 
     disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
         'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
