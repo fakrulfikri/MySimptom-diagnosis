@@ -9,16 +9,10 @@ import os
 
 app = Flask(__name__)
 
-
-@app.route('/hello')
-def home():
-    return 'hello'
-
-
 @app.route('/rf/<sym1>/<sym2>/<sym3>/<sym4>/<sym5>')
 def predict(sym1, sym2, sym3, sym4, sym5):
 
-# from gui_stuff import *
+# ikut apa yang ada dalam set data simptom csv *
 
     l1=['gatal','ruam','letusan kulit nod','bersin berterusan','menggigil','berasa sejuk','sakit sendi','stomach_pain','keasidan','ulser di lidah',
         'otot berasa lemah','muntah','sakit semasa kencing','darah dalam kencing','keletihan','penambahan berat badan','kegelisahan','kaki dan tangan berasa sejuk',
@@ -39,6 +33,8 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         'jerawat dipenuhi nanah','bintik hitam','rasa bergegar','kulit mengupas','pengupasan kulit bewarna perak','penyok kecil di kuku','radang kuku',
         'lepuh','ruam merah sekeliling hidung','kerak kuning mengalir']
 
+    # Namakan penyakit ikut apa output yang diingini/diperlukan. Ikut susunan dalam csv *
+    
     disease=['Jangkitan kulat','Alergi','GERD','Kolestasis kronik','Tindak balas dadah',
         'Penyakit ulser peptik','AIDS','Diabetes','Radang perut dan usus','Asma bronkial','Tekanan darah tinggi',
         'Migrain','Spondylosis serviks',
@@ -66,13 +62,13 @@ def predict(sym1, sym2, sym3, sym4, sym5):
         '(vertigo) Paroymsal  Positional Vertigo':36,'Acne':37,'Urinary tract infection':38,'Psoriasis':39,
         'Impetigo':40}},inplace=True)
 
-# print(df.head())
-
     X= df[l1]
 
     y = df[["prognosis"]]
+    
+# jadikan kepada 1-D array
     np.ravel(y)
-# print(y)
+
 
 # TRAINING DATA tr --------------------------------------------------------------------------------
     tr=pd.read_csv("Testing.csv")
@@ -97,11 +93,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     clf3 = RandomForestClassifier()
     clf3 = clf3.fit(X,np.ravel(y))
     # calculating accuracy-------------------------------------------------------------------
-    #from sklearn.metrics import accuracy_score
-    #y_pred=clf3.predict(X_test)
-    #print(accuracy_score(y_test, y_pred))
-    #print(accuracy_score(y_test, y_pred,normalize=False))
-    # -----------------------------------------------------
+
     Symptom1 = '%s' % sym1
     
     Symptom2 = '%s' % sym2
@@ -116,7 +108,7 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     psymptoms = [Symptom1,Symptom2,Symptom3,Symptom4,Symptom5]
 
     for k in range(0,len(l1)):
-    # print (k,)
+
         for z in psymptoms:
             if(z==l1[k]):
                 l2[k]=1
@@ -124,14 +116,14 @@ def predict(sym1, sym2, sym3, sym4, sym5):
     inputtest = [l2]
     predict = clf3.predict(inputtest)
     predicted=predict[0]
-    #print(predicted)
-    #assigning a string value to "a"
+    
+    #check disease position and name. If same, return it.
     for a in range(0,len(disease)):
         if(predicted == a):
             break
-    #Then comparing it to the disease list to get at the position of "a"
-    #from the disease list    
-    return disease[a]#returning the disease
-    
+       
+    #return disease name
+    return disease[a]
+
 if __name__ == '__main__':
     app.run(debug=True)
