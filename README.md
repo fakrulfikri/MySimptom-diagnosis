@@ -1,6 +1,9 @@
-# Check Symptom
-A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms in Bahasa Melayu. Result (disease name) will also be in Bahasa Melayu. Algo idea inspired by itachi9604/healthcare-chatbot 
+A project for my university final year project (UKM)
 
+# Check Symptom
+A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms in Bahasa Melayu. Result (disease name) will also be in Bahasa Melayu. Algo idea by itachi9604/healthcare-chatbot and modified.
+
+An absolute beginner. Any help and advice will be appreciated.
 
 ## Update
 - Changed the symptom and disease database language to Bahasa Melayu.
