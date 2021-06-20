@@ -1,13 +1,12 @@
-# Synptom Checker API
+# Check Symptom
 A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms.
-First time GitHub-ing. Please work..
+
 
 ## Update
-- IT WORKED!!!
 - Changed the symptom and disease database language to Bahasa Melayu.
 - Automatic deploy to Heroku PaaS is enabled.
 - The working repository has been backed up. 
-- Further changes, updates, and commits will be made in the future.
+- Stable version has been uploaded.
 
 ### How it works
 - Use PaaS (Platform as a Service) website/platform to connect to the Git repositories.
