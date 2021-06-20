@@ -1,5 +1,5 @@
 # Check Symptom
-A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms.
+A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms in Bahasa Melayu. Result (disease name) will also be in Bahasa Melayu. Algo idea inspired by itachi9604/healthcare-chatbot 
 
 
 ## Update
