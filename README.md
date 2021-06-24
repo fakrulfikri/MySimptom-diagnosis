@@ -3,7 +3,7 @@ Name: Muhammad Fakrulfikri Auzaie Bin rohizam
 A project for my university final year project (UKM)
 
 # Check Symptom
-A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms in Bahasa Melayu. Result (disease name) will also be in Bahasa Melayu. Algo idea by itachi9604/healthcare-chatbot and modified.
+A Flask Python program that is used as an API to determine the disease with the highest probability, based on given symptoms in Bahasa Melayu. Result (disease name) will also be in Bahasa Melayu. Algo idea by itachi9604/healthcare-chatbot which has been modified to suit the current project's needs.
 
 An absolute beginner. Any help and advice will be appreciated.
 
